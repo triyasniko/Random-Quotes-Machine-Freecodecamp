@@ -9,7 +9,7 @@ export const useQuotesApi = () => {
 
     await fetch(`${proxy}${quotesUrl}`, {
       headers: {
-        'X-Api-Key': 'CmjONnTDtCD8Yscc1EbkOw==XMhTc9GOs3oC7mjb',
+        'X-Api-Key': process.env.REACT_APP_X_API_KEY,
       },
     })
     .then((res) => res.json())
