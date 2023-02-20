@@ -10,7 +10,7 @@ const Quotes = () => {
 
   return (
     <div className="container-fluid d-flex justify-content-center align-items-center vh-100" style={{ backgroundImage: `url(${img})`, backgroundSize: "cover", fontFamily:"Source Sans Pro, sans-serif", fontSize:"24px"}}>
-      <div id="quote-box" className="bg-light p-5">
+      <div id="quote-box" className="bg-light p-5" style={{ maxWidth: "80%"}}>
         <p id="text">{QuotesData.quote}</p>
         <p id="author" style={{ fontWeight:"300", fontSize:"16px" }}>-{QuotesData.author}</p>
         <div className="button-container d-flex flex-column justify-content-center mt-2">
