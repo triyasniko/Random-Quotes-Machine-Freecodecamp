@@ -15,7 +15,7 @@ const Quotes = () => {
         <p id="author" style={{ fontWeight:"300", fontSize:"16px" }}>-{QuotesData.author}</p>
         <div className="button-container d-flex flex-column justify-content-center mt-2">
           <button className="btn btn-primary" id="new-quote" onClick={getNewQuote}>Generate Quotes</button>
-          <a className="btn" id="tweet-quote" href={`https://twitter.com/intent/tweet?text="${QuotesData.quote}" - ${QuotesData.author}`} target="_blank">
+          <a className="btn" id="tweet-quote" href={`https://twitter.com/intent/tweet?text="${QuotesData.quote}" - ${QuotesData.author}`} target="_blank" rel="noreferrer">
             <FontAwesomeIcon icon={faTwitter} />
           </a>
         </div>
